@@ -1,0 +1,135 @@
+.sidebar {
+  background: $sidebar-bg-color;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  min-width: 320px;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+
+  @media screen and (min-width: 768px) {
+    max-width: 320px;
+  }
+
+  @media screen and (min-width: 960px) {
+    min-width: 360px;
+  }
+}
+
+.info-mob {
+  padding: 35px 35px 20px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-left: calc((100vw - 320px) / (480 - 320) * (60 - 35) + 35px);
+    padding-right: calc((100vw - 320px) / (480 - 320) * (60 - 35) + 35px);
+  }
+
+  .profession-mob {
+    margin-bottom: 25px;
+    @include font(14px, $secondary-font-weight, 1.7);
+    color: $item-sidebar-color;
+  }
+
+  .name-mob {
+    margin-bottom: 5px;
+    color: $sidebar-text-color;
+    font-weight: $font-weight-bolt;
+
+    @media screen and (max-width: 480px) {
+      font-size: calc((100vw - 320px) / (480 - 320) * (30 - 24) + 24px);
+    }
+
+    @media screen and (min-width: 481px) {
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: 960px) {
+      font-size: 35px;
+    }
+  }
+
+  .personal-mob {
+    @include font(12px, $font-weight-norm, 2);
+    color: $secondary-text-color;
+  }
+
+  .profession-divider-mob {
+    color: $secondary-text-color;
+  }
+}
+
+.contacts-container,
+.skills-container {
+  margin: 30px 35px 0;
+
+  @media screen and (max-width: 767px) {
+    margin-left: calc((100vw - 320px) / (480 - 320) * (60 - 35) + 35px);
+    margin-right: calc((100vw - 320px) / (480 - 320) * (60 - 35) + 35px);
+  }
+
+  @media screen and (min-width: 960px) {
+    margin: 40px 35px 0;
+  }
+}
+
+.contacts-title,
+.skills-title {
+  margin-bottom: 10px;
+  @include font(22px, $font-weight-bolt, 1);
+
+  color: $sidebar-text-color;
+}
+
+.contact-block {
+  margin-bottom: 5px;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+  text-decoration: underline transparent;
+  @include font(14px, $font-weight-norm, 1.5);
+  color: $item-sidebar-color;
+
+  @include transition(color, font-weight, font-size, text-decoration);
+
+  &:hover,
+  &:focus,
+  .contact-block:hover &,
+  .contact-block:focus & {
+    color: $accent-color;
+    text-decoration: underline $accent-color;
+    @include font(14.5px, 500, 1.5);
+  }
+}
+
+.icon-contacts {
+  margin-right: 5px;
+}
+
+.icon {
+  fill: $item-sidebar-color;
+  @include transit(fill);
+
+  .contacts-link:hover &,
+  .contacts-link:focus & {
+    fill: $accent-color;
+  }
+}
+
+.skills-item {
+  margin-left: 20px;
+  @include font(14px, $font-weight-norm, 1.7);
+  color: $accent-color;
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  .skills-text {
+    color: $item-sidebar-color;
+  }
+}

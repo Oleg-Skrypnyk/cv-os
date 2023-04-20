@@ -1,0 +1,118 @@
+// sidebar
+
+@media print {
+  body {
+    background: $sidebar-text-color;
+    padding: 0;
+
+    &.light-theme {
+      background-color: $sidebar-text-color;
+    }
+
+    &.dark-theme {
+      background-color: $sidebar-text-color;
+    }
+  }
+
+  .toolbar {
+    display: none;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+
+  .sidebar {
+    min-width: 260px;
+  }
+
+  .info-mob {
+    display: none;
+  }
+
+  .contacts-container {
+    margin: 40px 30px 0;
+  }
+
+  .contacts-link.start {
+    align-items: flex-start;
+  }
+
+  .skills-container {
+    margin: 28px 30px 0;
+
+    &--interests {
+      margin-top: 10px;
+      padding-top: 20px;
+    }
+  }
+
+  .skills-item {
+    margin-bottom: 0;
+  }
+
+  // info-main
+
+  .about-me-container {
+    padding: 20px;
+  }
+
+  .info-tablet {
+    margin-bottom: 18px;
+  }
+
+  .info-container {
+    margin-bottom: 30px;
+
+    .profession {
+      margin-bottom: 20px;
+      @include font(14px, $font-weight-bolt, 1.5);
+    }
+
+    .name {
+      @include font(30px, $font-weight-bolt, 1.7);
+    }
+
+    .personal {
+      @include font(10px, $font-weight-norm, 1.7);
+    }
+
+    .description {
+      @include font(14px, $font-weight-norm, 1.5);
+    }
+  }
+
+  .projects-container {
+    margin-top: 20px;
+  }
+
+  .about-me-title {
+    margin-bottom: 10px;
+    @include font(20px, $font-weight-bolt, 1);
+  }
+
+  .profession-time {
+    @include font(10px, $font-weight-norm, 1.7);
+  }
+
+  .profession-duties {
+    margin-top: 8px;
+  }
+
+  .profession-duties-item {
+    @include font(14px, $font-weight-norm, 1.5);
+  }
+
+  #back-to-top {
+    display: none;
+  }
+
+  .profession-achievements {
+    @include font(14px, $secondary-font-weight, 1.5);
+  }
+
+  .education-company {
+    margin-bottom: 5px;
+    @include font(16px, $font-weight-bolt, 1.5);
+  }
+}

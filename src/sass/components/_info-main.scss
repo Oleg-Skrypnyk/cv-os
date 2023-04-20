@@ -1,0 +1,177 @@
+.about-me-container {
+  padding: 30px 35px;
+
+  padding-left: calc((100vw - 320px) / (480 - 320) * (40 - 30) + 30px);
+  padding-right: calc((100vw - 320px) / (480 - 320) * (40 - 30) + 30px);
+
+  &.light-theme {
+    background-color: $sidebar-text-color;
+  }
+
+  &.dark-theme {
+    background-color: $sidebar-bg-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 46px 30px 30px;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding: 46px 75px 30px;
+  }
+}
+
+.info-tablet {
+  margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.info-container {
+  .profession {
+    margin-bottom: 25px;
+    @include font(14px, $font-weight-bolt, 1.7);
+  }
+
+  .name {
+    @include font(30px, $font-weight-bolt, 2);
+  }
+
+  .personal {
+    color: $secondary-text-color;
+    @include font(12px, $font-weight-norm, 2);
+  }
+
+  .description {
+    @include font(14px, $font-weight-norm, 1.7);
+
+    @media screen and (min-width: 768px) {
+      text-indent: 20px;
+    }
+  }
+}
+
+.projects-container {
+  margin-top: 24px;
+}
+
+.about-me-title {
+  margin-bottom: 16px;
+  @include font(22px, $font-weight-bolt, 1.5);
+}
+
+.company {
+  margin-bottom: 18px;
+}
+
+.profession-title {
+  @include font(16px, $font-weight-bolt, 1.5);
+
+  & .profession-title-list {
+    list-style: none;
+  }
+
+  & .profession-title-item {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.profession-company {
+  text-decoration: underline transparent;
+  color: $accent-color;
+  font-size: 16px;
+
+  @include transition(text-decoration, font-size);
+
+  &:hover {
+    font-size: 16.5px;
+    text-decoration: underline $accent-color;
+  }
+}
+
+.profession-time {
+  display: block;
+  color: $secondary-text-color;
+  @include font(12px, $font-weight-norm, 2);
+}
+
+.profession-divider {
+  color: $secondary-text-color;
+}
+
+.profession-duties {
+  margin-top: 10px;
+}
+
+.profession-duties-item {
+  margin-left: 20px;
+  @include font(14px, $font-weight-norm, 1.7);
+}
+
+.profession-duties-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.profession-achievements {
+  margin: 10px 0 0;
+  // text-indent: 20px;
+  @include font(14px, $secondary-font-weight, 1.7);
+}
+
+.education-company {
+  margin-bottom: 10px;
+  @include font(16px, $font-weight-bolt, 1.7);
+}
+
+.education-duties {
+  margin-bottom: 5px;
+  margin-left: 0;
+  @include font(14px, $secondary-font-weight, 1.7);
+  list-style: none;
+}
+
+.education-duties-item {
+  @include font(14px, $secondary-font-weight, 1.7);
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.dots {
+  color: $dots-color;
+  font-weight: 100;
+
+  @media screen and (max-width: 580px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 581px) and (max-width: 767px) {
+    display: inline;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1036px) {
+    display: inline;
+  }
+}
+
+.link-description {
+  @media screen and (max-width: 580px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 581px) and (max-width: 767px) {
+    display: inline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1035px) {
+    display: block;
+  }
+}

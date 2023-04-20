@@ -1,0 +1,14 @@
+@mixin transit($property) {
+  transition: $property $duration $cubic-bezier;
+}
+@mixin font($size, $weight, $height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin transition($property...) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $cubic-bezier;
+}
