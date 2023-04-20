@@ -1,15 +1,15 @@
 export const langArr = {
   title: {
-    en: 'CV_Maryna S.',
-    ua: 'Марина Скрипник',
+    en: 'CV_Oleg S.',
+    ua: 'Олег Скрипник',
   },
   name: {
-    en: 'Maryna Skrypnyk',
-    ua: 'Марина Скрипник',
+    en: 'Oleg Skrypnyk',
+    ua: 'Олег Скрипник',
   },
   profession: {
-    en: 'Front-End Developer',
-    ua: 'Front-End розробник',
+    en: 'Progressive leader with more than 15 years’ experience in finance and operations management',
+    ua: 'Прогресивний лідер з більш ніж 15-річним досвідом роботи в управлінні фінансами та операціями',
   },
   fullStack: {
     en: 'Full Stack Developer',
@@ -24,15 +24,19 @@ export const langArr = {
     ua: 'Київ',
   },
   ukraine: {
-    en: 'Ukraine',
+    en: 'Citizenship: Ukraine',
     ua: 'Україна',
+  },
+  reside: {
+    en: 'Reside in Kyiv',
+    ua: 'Київ',
   },
   contacts: {
     en: 'Contacts',
     ua: 'Контакти',
   },
-  technical: {
-    en: 'Technical Skills',
+  hard: {
+    en: 'Hard Skills',
     ua: 'Технічні навички',
   },
   soft: {
@@ -91,17 +95,17 @@ export const langArr = {
     en: 'Interests',
     ua: 'Інтереси',
   },
-  fitness: {
-    en: 'Fitness',
-    ua: 'Фітнес',
+  football: {
+    en: 'Football',
+    ua: 'Футбол',
   },
-  reading: {
-    en: 'Reading',
-    ua: 'Читання',
+  fishing: {
+    en: 'Fishing',
+    ua: 'Риболовля',
   },
-  games: {
-    en: 'Board games',
-    ua: 'Настільні ігри',
+  chess: {
+    en: 'Chess',
+    ua: 'Шахи',
   },
   description: {
     en: "I'm looking for a position in a company that's aimed at growth and progress together with a team. I have sound knowledge of HTML, CSS, JavaScript, and React. I studied the basics of Node.js. Besides, I gained hands-on experience in following Agile/Scrum methodology when working in a team. I'm going to develop my skills as well as grow with a team.",
