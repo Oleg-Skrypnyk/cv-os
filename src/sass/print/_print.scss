@@ -1,9 +1,9 @@
 // повна заборона друку документа
-// body {
-//   @media print {
-//     display: none;
-//   }
-// }
+body {
+  @media print {
+    display: none;
+  }
+}
 
 @media print {
   body {
