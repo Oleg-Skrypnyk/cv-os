@@ -16,30 +16,6 @@ aside .select {
   }
 }
 
-// .select {
-//   @media screen and (max-width: 768px) {
-//     position: fixed;
-//     left: 10px;
-//     top: 10px;
-//   }
-
-//   @media screen and (min-width: 769px) {
-//     position: absolute;
-//     top: 32px;
-//     right: 160px;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     position: absolute;
-//     top: 32px;
-//     right: 190px;
-//   }
-
-//   @media print {
-//     display: none;
-//   }
-// }
-
 select {
   appearance: none;
   background-color: transparent;

@@ -1,5 +1,5 @@
 .about-me-container {
-  padding: 30px 35px;
+  padding: 20px 35px;
 
   padding-left: calc((100vw - 320px) / (480 - 320) * (40 - 30) + 30px);
   padding-right: calc((100vw - 320px) / (480 - 320) * (40 - 30) + 30px);
@@ -13,12 +13,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    // padding: 46px 30px 30px;
-    padding: 30px 30px 30px;
+    padding: 20px;
   }
 
   @media screen and (min-width: 960px) {
-    padding: 46px 75px 30px;
+    padding: 20px 75px 30px;
   }
 }
 
@@ -146,11 +145,11 @@
   color: $dots-color;
   font-weight: 100;
 
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 674px) {
     display: none;
   }
 
-  @media screen and (min-width: 581px) and (max-width: 767px) {
+  @media screen and (min-width: 675px) and (max-width: 767px) {
     display: inline;
   }
 
@@ -158,21 +157,21 @@
     display: none;
   }
 
-  @media screen and (min-width: 1036px) {
+  @media screen and (min-width: 1140px) {
     display: inline;
   }
 }
 
 .link-description {
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 674px) {
     display: block;
   }
 
-  @media screen and (min-width: 581px) and (max-width: 767px) {
+  @media screen and (min-width: 675px) and (max-width: 767px) {
     display: inline;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1035px) {
+  @media screen and (min-width: 768px) and (max-width: 1139px) {
     display: block;
   }
 }

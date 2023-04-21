@@ -11,10 +11,6 @@ export const langArr = {
     en: 'Progressive leader with more than 15 years’ experience in finance and operations management',
     ua: 'Прогресивний лідер з більш ніж 15-річним досвідом роботи в управлінні фінансами та операціями',
   },
-  fullStack: {
-    en: 'Full Stack Developer',
-    ua: 'Full Stack розробник',
-  },
   dob: {
     en: 'DOB:',
     ua: 'ДН:',
@@ -22,6 +18,10 @@ export const langArr = {
   kyiv: {
     en: 'Kyiv',
     ua: 'Київ',
+  },
+  mariupol: {
+    en: 'Mariupol',
+    ua: 'Маріуполь',
   },
   ukraine: {
     en: 'Citizenship: Ukraine',
@@ -31,37 +31,67 @@ export const langArr = {
     en: 'Reside in Kyiv',
     ua: 'Київ',
   },
+
+  /*sidebar*/
   contacts: {
     en: 'Contacts',
     ua: 'Контакти',
   },
   hard: {
     en: 'Hard Skills',
-    ua: 'Технічні навички',
+    ua: 'Ключові навики',
+  },
+  accounting: {
+    en: 'Accounting and audit',
+    ua: 'Облік і аудит',
+  },
+  'oper-management': {
+    en: 'Finance and operations management',
+    ua: 'Фінансовий та операційний менеджмент',
+  },
+  'financ-modelling': {
+    en: 'Financial modelling',
+    ua: 'Фінансове моделювання',
+  },
+  risk: {
+    en: 'Risk assessment',
+    ua: 'Оцінка ризику',
+  },
+  treasury: {
+    en: 'Treasury',
+    ua: 'Казначейство',
+  },
+  optimizing: {
+    en: 'Optimizing business operations',
+    ua: 'Оптимізація діяльності',
+  },
+  'present-skills': {
+    en: 'Presentation skills',
+    ua: 'Презентаційні навички',
   },
   soft: {
     en: 'Soft Skills',
     ua: 'Особисті якості',
   },
-  proactive: {
-    en: 'Proactive',
-    ua: 'Проактивність',
+  decision: {
+    en: 'Decision-making',
+    ua: 'Прийняття рішень',
   },
   motivation: {
     en: 'Extreme self-motivation',
     ua: 'Надзвичайна самомотивація',
   },
-  enthusiasm: {
-    en: 'Enthusiasm and dedication',
-    ua: 'Ентузіазм і відданість',
+  result: {
+    en: 'Result-oriented',
+    ua: 'Орієнтований на результат',
   },
-  details: {
-    en: 'A pretty good eye for details',
-    ua: 'Уважність до деталей',
+  'team-player': {
+    en: 'Team player',
+    ua: 'Командний гравець',
   },
-  outgoing: {
-    en: 'Outgoing',
-    ua: 'Товариськість, привітність',
+  approach: {
+    en: 'Individual approach',
+    ua: 'Індивідуальний підхід',
   },
   languages: {
     en: 'Languages',
@@ -79,17 +109,17 @@ export const langArr = {
     en: 'Native',
     ua: 'рідна',
   },
-  preInt: {
-    en: 'Pre-Intermediate',
-    ua: 'середній рівень',
+  advanced: {
+    en: 'Advanced',
+    ua: 'високий рівень',
   },
-  dotsUkrainian: {
+  'dots-ua': {
+    en: ' ..... ',
+    ua: ' .... ',
+  },
+  'dots-en': {
     en: ' .......... ',
-    ua: ' ...... ',
-  },
-  dotsEnglish: {
-    en: ' ................ ',
-    ua: ' ...... ',
+    ua: ' .... ',
   },
   interests: {
     en: 'Interests',
@@ -107,137 +137,123 @@ export const langArr = {
     en: 'Chess',
     ua: 'Шахи',
   },
-  description: {
-    en: "I'm looking for a position in a company that's aimed at growth and progress together with a team. I have sound knowledge of HTML, CSS, JavaScript, and React. I studied the basics of Node.js. Besides, I gained hands-on experience in following Agile/Scrum methodology when working in a team. I'm going to develop my skills as well as grow with a team.",
-    ua: 'Шукаю позицію в компанії, націленій на ріст і прогрес разом з командою. Добре знаю HTML, CSS, JavaScript і React. Вивчала основи Node.js. Крім того, маю практичний досвід використання методології Agile/Scrum в роботі з командою. Налаштована розвивати свої навички та прогресувати разом з командою.',
+
+  /*about*/
+  summary: {
+    en: "I have been working in the Company for six years carrying out diverse functions of any complexity. I was a team member who created both the first UE's Strategy and KPI for the top management (12 directors). Also, the first presentations to the Supervisory Board have been created by me in July-August 2018. I know much about the following Company's functions as transportation and dispatching of electricity (physical and economic issues), and electricity balancing market. I have an excellent understanding of forming, performing, and reporting for Operational Plan, Investment Plan, and Financial Plan. I am an expert in audit, accounting, financing, and economics. I have a profound understanding of the internal process of tariff compilation, the formation of the financial plan, and all external specifics in their further authorization and approval.",
+    ua: 'Я працюю у Компанії шість років, виконуючи різноманітні функції будь-якої складності. Був членом команди, яка створила перший стратегічний план Компанії та ключові показники ефективності для топ-менеджменту (12 директорів). Також, у липні-серпні 2018 року я створив перші презентації для Наглядової ради. Маю глибокі знання у таких галузях діяльності Компанії, як транспортування та розподіл електроенергії (фізичні та економічні питання) та ринок балансування електроенергії. Я маю відмінне розуміння у формуванні, виконанні та звітуванні за Операційним, Інвестиційним та Фінансовим планом. Я є експертом у проведенні аудиту, бухгалтерського обліку, фінансуванні та економіці. Я маю глибоке розуміння у внутрішніх процесах складання тарифів, формування фінансового плану та зовнішніх особливостей їх подальшої авторизації та затвердження.',
   },
-  projects: {
-    en: 'Project experience',
-    ua: 'Проекти',
+  'previous-work': {
+    en: 'Thanks to my previous work experience I have good communication with the majority of NERC members and other specialists, middle management of the Ministry of Energy, and some representatives from the Ministry of Finance. Therefore, I know all areas of activity of our Company.',
+    ua: `Завдяки своєму попередньому досвіду роботи, маю хороші зв'язки з більшістю членів Національної комісії з регулювання енергетики та іншими фахівцями, середнім керівництвом Міністерства енергетики та представниками Міністерства фінансів. Тому я знаю всі аспекти діяльності нашої Компанії.`,
   },
-  aboutProject: {
-    en: 'About the project:',
-    ua: 'Проект:',
+  conclusion: {
+    en: 'I believe in my good reputation within and outside the Company.',
+    ua: 'Я вважаю, що маю хорошу репутацію як в Компанії, так і за її межами.',
   },
-  tasks: {
-    en: 'My tasks:',
-    ua: 'Мої завдання:',
-  },
-  role: {
-    en: 'My role:',
-    ua: 'Моя роль:',
-  },
-  icecream: {
-    en: 'Ice Cream',
-    ua: 'Морозиво',
-  },
-  dotsIcecream: {
-    en: '............................',
-    ua: '...................................',
-  },
-  aboutIcecream: {
-    en: 'mobile-first adaptive and responsive landing page to introduce ice cream products and attract clients.',
-    ua: 'mobile-first адаптивна та відгучна лендінг-сторінка для представлення продуктів морозива та залучення клієнтів.',
-  },
-  icecreamTask: {
-    en: 'layout of sections Advantages, Gallery, Customer reviews. Coordination of team.',
-    ua: 'реалізувала розмітки секцій Advantages, Gallery, Customer reviews. Координувала командну роботу з кодування.',
-  },
-  filmoteka: {
-    en: 'Filmoteka',
-    ua: 'Фільмотека',
-  },
-  dotsFilmoteka: {
-    en: '.............................',
-    ua: '...............................',
-  },
-  aboutFilmoteka: {
-    en: 'application for choosing a movie with the ability to add movies to the library.',
-    ua: 'додаток для вибору фільму, з можливістю додавання/видалення фільмів у бібліотеку обраних і/або переглянутих.',
-  },
-  filmotekaTask: {
-    en: 'responsible for sections My Library, Header. Coordination of team tasks.',
-    ua: 'реалізувала секції My Library, Header. Координувала командні завдання.',
-  },
-  phonebook: {
-    en: 'Phonebook',
-    ua: 'Телефонна книга',
-  },
-  dotsPhonebook: {
-    en: '.........................',
-    ua: '...............',
-  },
-  aboutPhonebook: {
-    en: 'web app with authorization, profile page, ability to add, update and remove contacts, and existing contacts filter.',
-    ua: 'mobile-first адаптивний та відгучний веб-додаток з авторизацією, сторінкою профілю, можливістю додавання нових контактів, редагуванням, видаленням і фільтром існуючих.',
-  },
-  phonebookTask: {
-    en: 'development of a front-end application on react.',
-    ua: 'розробила front-end додаток на React.js',
-  },
-  wallet: {
-    en: 'Wallet',
-    ua: 'Гаманець',
-  },
-  dotsWallet: {
-    en: '.......................................',
-    ua: '......................................',
-  },
-  aboutWallet: {
-    en: 'web app with authorization, ability to add transactions for the wallet, and display statistics on expenses filtered by month and year.',
-    ua: 'додаток з авторизацією, можливістю додавання транзакцій для гаманця та відображення статистики витрат за місяцями та роками.',
-  },
-  walletTask: {
-    en: 'responsible for authorization, adding transactions by the user on the frontend side, routing, and connecting to the backend. Also implemented logout functionality, modals, and other components.',
-    ua: 'відповідала за авторизацію, додавання транзакцій користувачем на стороні інтерфейсу, маршрутизацію, підключення до бекенда. Також, реалізувала функцію виходу з системи, модальні та інші компоненти.',
-  },
-  individual: {
-    en: 'individual project',
-    ua: 'індивідуальний проект',
-  },
-  team: {
-    en: 'team project',
-    ua: 'командний проект',
-  },
+
+  /*work experience*/
   work: {
     en: 'Work experience',
     ua: 'Досвід роботи',
   },
-  expertActivity: {
-    en: 'Independent forensic expert activity',
-    ua: 'Незалежна судово-експертна діяльність',
+  'head-officer': {
+    en: 'Head officer of administration and coordination of activity',
+    ua: 'Керівник служби адміністрування та координації діяльності',
   },
-  ersu: {
-    en: '«Expert Research Service of Ukraine, Limited Liability Company»',
-    ua: 'ТОВ «Експертно-дослідна служба України»',
+  'acting-dir': {
+    en: `Acting director of «Ukrenergoservice»`,
+    ua: `Виконуючий обов'язки директора "Укренергосервіс"`,
   },
-  bankingActivity: {
-    en: 'Banking activity',
-    ua: 'Банківська діяльність',
+  'acting-head-plan': {
+    en: 'Acting Head of planning and analysis department',
+    ua: `Виконуючий обов'язки керівника відділу планування та аналізу`,
   },
-  vtb: {
-    en: '«VTB Bank» Public Joint Stock company',
-    ua: 'АТ «ВТБ Банк»',
+  'acting-head-treasury': {
+    en: 'Acting Head of treasury department',
+    ua: `Виконуючий обов'язки керівника відділу казначейства`,
   },
-  ukrsotsbank: {
-    en: '«Ukrsotsbank» Joint-stock Commercial Bank',
-    ua: 'АТ «Укрсоцбанк»',
+  'acting-cfo': {
+    en: 'current Acting CFO (300 employees)',
+    ua: `Виконуючий обов'язки фінансового директора (з 300 співробітниками в підпорядкуванні)`,
   },
-  leadEconomist: {
-    en: 'Lead Economist',
-    ua: 'Провідний економіст',
+  'board-member': {
+    en: 'Board member (Executive Director)',
+    ua: `Член правління (Виконавчий директор)`,
   },
-  upToNow: {
+  current: {
+    en: 'current',
+    ua: 'по теперішній час',
+  },
+  'up-to-now': {
     en: 'up to now',
-    ua: 'до тепер',
+    ua: 'по теперішній час',
   },
+
+  /*companies*/
+  ukrenergo: {
+    en: 'NPC «Ukrenergo»',
+    ua: '«НЕК «Укренерго»',
+  },
+  ukrtransnafta: {
+    en: 'PJSC «Ukrtransnafta»',
+    ua: 'АТ «Укртранснафта»',
+  },
+
+  /*monthes*/
+  december: {
+    en: 'December',
+    ua: 'грудень',
+  },
+  january: {
+    en: 'January',
+    ua: 'січень',
+  },
+  september: {
+    en: 'September',
+    ua: 'вересень',
+  },
+  october: {
+    en: 'October',
+    ua: 'жовтень',
+  },
+  november: {
+    en: 'November',
+    ua: 'листопад',
+  },
+  march: {
+    en: 'March',
+    ua: 'березень',
+  },
+  april: {
+    en: 'April',
+    ua: 'квітень',
+  },
+  may: {
+    en: 'May',
+    ua: 'травень',
+  },
+  june: {
+    en: 'June',
+    ua: 'червень',
+  },
+  july: {
+    en: 'July',
+    ua: 'липень',
+  },
+
+  /*education*/
   education: {
     en: 'Education',
     ua: 'Освіта',
   },
-  additionalEducation: {
-    en: 'Additional Education',
-    ua: 'Додаткова освіта',
+  kse: {
+    en: 'Kyiv School of Economics (KSE)',
+    ua: 'Київська школа економіки (KSE)',
+  },
+  mba: {
+    en: 'MBA program "Management of state-owned enterprises"',
+    ua: 'Програма МВА "Управління державними підприємствами"',
   },
   kneu: {
     en: 'Kyiv National Economic University',
@@ -247,64 +263,24 @@ export const langArr = {
     en: 'Management of entrepreneurship',
     ua: 'Менеджмент підприємницької діяльності',
   },
-  dotsManagement: {
-    en: ' ..................... ',
-    ua: ' ................. ',
+  'dots-management': {
+    en: ' ...................... ',
+    ua: ' ..... ',
   },
-  dotsBachelor: {
-    en: ' ................................................. ',
-    ua: ' ...................................................................... ',
+  'dots-bachelor': {
+    en: ' .................................................. ',
+    ua: ' ............................................................ ',
   },
   magister: {
     en: 'Magister of Economics',
-    ua: 'Магістр економіки',
+    ua: 'Магістр з економіки',
   },
   bachelor: {
-    en: 'Bachelor of Economics, teacher of economics',
-    ua: 'Бакалавр економіки, викладач економіки',
+    en: 'Bachelor of Economics',
+    ua: 'Бакалавр з економіки',
   },
   enterprises: {
     en: 'Economic of enterprises',
     ua: 'Економіка підприємств',
-  },
-  completed: {
-    en: 'Completed a 9-month course on front-end and a 2-month course on back-end.',
-    ua: 'Завершила 9-місячний курс front-end та 2-місячний курс back-end розробки.',
-  },
-  learned: {
-    en: 'Learned the workings of JavaScript, React.js, HTML, CSS, and others.',
-    ua: 'Навчилась працювати з JavaScript, React.js, HTML, CSS та з іншими технологіями.',
-  },
-  vsc: {
-    en: 'Became familiar with using popular coding technology such as Visual Studio Code.',
-    ua: 'Ознайомилась з використанням популярної технології кодування Visual Studio Code.',
-  },
-  built: {
-    en: 'Built several web applications using the technologies above. Three of them are team projects.',
-    ua: 'Створила кілька веб-додатків, використовуючи вищезазначені технології, з яких три – це командні проекти.',
-  },
-  providedExpertise: {
-    en: 'Provided expertise for court or out-of-court. I wrote over 100 credit expertise reports.',
-    ua: 'Надала експертизу для судового та позасудового розгляду. Написала понад 100 звітів кредитної експертизи.',
-  },
-  managedExpertise: {
-    en: 'Managed content and created content marketing. I wrote over 50 specialized publications and articles, which I posted on the web and social networks.',
-    ua: 'Керувала контентом і створювала маркетинговий контент. Написала понад 50 спеціалізованих публікацій і статей, які розміщувала в Інтернеті та соціальних мережах.',
-  },
-  customer: {
-    en: 'Provided full customer support services.',
-    ua: 'Надавала повний спектр послуг підтримки клієнтів.',
-  },
-  calculation: {
-    en: 'Developed a calculation system in Excel and adapted it for the majority of credit expertise reports.',
-    ua: 'Розробила систему розрахунків в Excel та адаптувала її для більшості звітів кредитної експертизи.',
-  },
-  analyzedCourt: {
-    en: 'Analyzed versatile court decisions from various instances.',
-    ua: 'Проаналізувала різноманітні судові рішення різних інстанцій.',
-  },
-  certification: {
-    en: 'Completed the certification in the Ministry of Justice of Ukraine as an independent forensic expert, specialty "Research of documents of financial and credit transactions".',
-    ua: 'Пройшла атестацію в Міністерстві юстиції України на звання незалежного судового експерта зі спеціальності «Дослідження документів фінансово-кредитних операцій».',
   },
 };
