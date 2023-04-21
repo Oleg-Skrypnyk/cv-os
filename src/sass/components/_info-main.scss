@@ -30,7 +30,7 @@
 
 .info-container {
   .profession {
-    margin-bottom: 25px;
+    margin-bottom: 14px;
     @include font(14px, $font-weight-bolt, 1.7);
   }
 
@@ -57,7 +57,7 @@
 }
 
 .about-me-title {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   @include font(22px, $font-weight-bolt, 1.5);
 }
 
