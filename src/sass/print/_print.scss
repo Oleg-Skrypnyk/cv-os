@@ -1,4 +1,9 @@
-// sidebar
+// повна заборона друку документа
+body {
+  @media print {
+    display: none;
+  }
+}
 
 @media print {
   body {
@@ -20,6 +25,10 @@
 
   .wrapper {
     display: flex;
+  }
+
+  .select {
+    display: none;
   }
 
   .sidebar {

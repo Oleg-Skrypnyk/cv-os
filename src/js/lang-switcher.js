@@ -1,10 +1,18 @@
 import { langArr } from './lang-data.js';
-const select = document.querySelector('select');
+const selectMob = document.getElementById('select-mob');
+const select = document.getElementById('standard-select');
 const allLang = ['en', 'ua'];
 
+selectMob.addEventListener('change', changeURLLanguageMob);
 select.addEventListener('change', changeURLLanguage);
 
 // перенаправлення на url з індикатором мови
+function changeURLLanguageMob() {
+  let lang = selectMob.value;
+  location.href = window.location.pathname + '#' + lang;
+  location.reload();
+}
+
 function changeURLLanguage() {
   let lang = select.value;
   location.href = window.location.pathname + '#' + lang;
@@ -19,8 +27,10 @@ function changeLanguage() {
     location.reload();
   }
   select.value = hash;
+  selectMob.value = hash;
+
   document.querySelector('title').innerHTML = langArr['title'][hash];
-  // document.querySelector('.name-mob').innerHTML = langArr['name-mob'][hash];
+
   for (let key in langArr) {
     // let elem = document.querySelector('.lng-' + key);
     let elemAll = document.querySelectorAll('.lng-' + key);
@@ -29,7 +39,12 @@ function changeLanguage() {
     //   elem.innerHTML = langArr[key][hash];
     // }
     if (elemAll.length > 0) {
-      elemAll.forEach(el => (el.innerHTML = langArr[key][hash]));
+      elemAll.forEach(el => {
+        if (langArr[key][hash]) {
+          return (el.innerHTML = langArr[key][hash]);
+        }
+        return (el.innerHTML = langArr[key]['en']);
+      });
     }
   }
 }

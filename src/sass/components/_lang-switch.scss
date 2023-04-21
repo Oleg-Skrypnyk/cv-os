@@ -1,26 +1,45 @@
-.select {
-  @media screen and (max-width: 768px) {
+aside .select {
+  @media screen and (max-width: 767px) {
     position: fixed;
-    left: 10px;
+    right: 10px;
     top: 10px;
   }
 
-  @media screen and (min-width: 769px) {
-    position: absolute;
-    top: 32px;
-    right: 160px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    position: absolute;
-    top: 32px;
-    right: 190px;
-  }
-
-  @media print {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
+.about-me-container .select {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+// .select {
+//   @media screen and (max-width: 768px) {
+//     position: fixed;
+//     left: 10px;
+//     top: 10px;
+//   }
+
+//   @media screen and (min-width: 769px) {
+//     position: absolute;
+//     top: 32px;
+//     right: 160px;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     position: absolute;
+//     top: 32px;
+//     right: 190px;
+//   }
+
+//   @media print {
+//     display: none;
+//   }
+// }
+
 select {
   appearance: none;
   background-color: transparent;

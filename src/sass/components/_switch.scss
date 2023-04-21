@@ -1,26 +1,47 @@
-/*toolbar*/
+.switch-container {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: sticky;
+  top: 10px;
+  left: 0;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+}
+
+/*theme*/
 .toolbar {
-  @media screen and (max-width: 768px) {
-    position: fixed;
-    right: 0;
-    top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-left: 10px;
   }
 
-  @media screen and (min-width: 769px) {
-    position: absolute;
-    top: 30px;
-    right: 26px;
-  }
+  // @media screen and (max-width: 768px) {
+  //   position: fixed;
+  //   right: 0;
+  //   top: 10px;
+  // }
 
-  @media screen and (min-width: 1280px) {
-    position: absolute;
-    top: 30px;
-    right: 50px;
-  }
+  // @media screen and (min-width: 769px) {
+  //   position: absolute;
+  //   top: 30px;
+  //   right: 26px;
+  // }
 
-  @media print {
-    display: none;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   position: absolute;
+  //   top: 30px;
+  //   right: 50px;
+  // }
+
+  // @media print {
+  //   display: none;
+  // }
 }
 
 /*theme switcher*/

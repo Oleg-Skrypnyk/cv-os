@@ -12,11 +12,6 @@ body {
   @media screen and (max-width: 768px) {
     padding: 0;
   }
-
-  // повна заборона друку документа
-  @media print {
-    display: none;
-  }
 }
 
 body.light-theme {
@@ -28,6 +23,27 @@ body.dark-theme {
   background-color: $primary-text-color;
   color: $item-sidebar-color;
   font-weight: $font-weight-norm;
+
+  @media screen and (min-width: 768px) {
+    & aside {
+      position: relative;
+    }
+
+    & aside::after {
+      position: absolute;
+      content: '';
+      display: block;
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      border-radius: 2px;
+      background-image: linear-gradient(
+        transparent 1%,
+        rgba(168, 168, 168, 0.2) 2%
+      );
+    }
+  }
 }
 
 .wrapper {
