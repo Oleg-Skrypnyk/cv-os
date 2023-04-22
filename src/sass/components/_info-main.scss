@@ -38,11 +38,6 @@
     @include font(30px, $font-weight-bolt, 2);
   }
 
-  .personal {
-    color: $secondary-text-color;
-    @include font(12px, $font-weight-norm, 2);
-  }
-
   .description {
     @include font(14px, $font-weight-norm, 1.7);
 
@@ -75,6 +70,10 @@
   & .profession-title-item {
     margin-top: 0;
     margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  &.profession-title-item {
     margin-bottom: 5px;
   }
 }
@@ -122,7 +121,7 @@
 }
 
 .education-company {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   @include font(16px, $font-weight-bolt, 1.7);
 }
 
